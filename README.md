@@ -1,6 +1,8 @@
 # fpjson
 This repository aims to provide a lightweight C function to pretty printing JSON string. Because it is small and no other JSON library is required, so it can be easily used in most instances.
 
+I refer to this forum thread https://stackoverflow.com/questions/17514611/formatting-and-parsing-a-json-string-using-c , and modify part of mentaioned java code, then transform it with c language.
+
 For example, a original JSON string as:
 
 ```
