@@ -1,7 +1,12 @@
-fpjson: fpjson.c
-fpjson.o: fpjson.c
-	gcc -c fpjson.c
+MYEXEC=fpjson
+CC=gcc
+CFLAGS=
+INC=
+LIB=
+
 fpjson: fpjson.o
-	gcc -o fpjson fpjson.o
+	${CC} $< ${CFLAGS} ${INC} ${LIB} -o $@
+fpjson.o: fpjson.c
+	${CC} $< ${CFLAGS} ${INC} ${LIB} -c
 clean:
-	rm -f fpjson fpjson.o
+	rm -f ${MYEXEC} *.o
